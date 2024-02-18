@@ -1,0 +1,19 @@
+name: Run Python Script on Dispatch
+on:
+  repository_dispatch:
+    types: [run-script]
+
+jobs:
+  run-python-script:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.10'
+
+    - name: Run script
+      run: python https://github.com/ehlke-hepworth/power-automate/blob/main/capability_assessment_graphs.py
