@@ -17,4 +17,6 @@ jobs:
 
     - name: Run script
       run: python https://github.com/ehlke-hepworth/power-automate/scripts/test.py
+      
+    - name: Run script
       run: python https://github.com/ehlke-hepworth/power-automate/scripts/capability_assessment_graphs.py
