@@ -16,7 +16,7 @@ jobs:
         python-version: '3.10'
 
     - name: Run script
-      run: python https://github.com/ehlke-hepworth/power-automate/scripts/test.py
+      run: python https://github.com/ehlke-hepworth/power-automate/test.py
       
     - name: Run script
-      run: python https://github.com/ehlke-hepworth/power-automate/scripts/capability_assessment_graphs.py
+      run: python https://github.com/ehlke-hepworth/power-automate/capability_assessment_graphs.py
